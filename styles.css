@@ -1,0 +1,25 @@
+body
+{
+    background-color: rgb(53, 126, 126);
+}
+
+.grid
+{
+    width: 80vh;
+    height: 80vh;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div
+{
+    width: 20px;
+    height: 20px;
+}
+
+.target
+{
+    background-color: rgb(109, 79, 79);
+    border-radius: 10px;
+}
