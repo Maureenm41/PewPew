@@ -104,7 +104,21 @@ let game = function()
             {
                 this.draw = function(cc)
                     {
-                        let dd = _.i
+                        let dd = _.id;
+                        _.targetRange.w=dd.cols*dd.w+dd.cols*dd.gap;
+                        _.targetRange.x=cw/2-_.targetRange.w/2;
+                        let yoffset=10;
+                        let xoffset= _.targetRange.x ;
+                        for(let x=0; x<dd.cols; x++)
+                            {
+                                for(let y=0; y<dd.rows; y++)
+                                    {
+                                        let target ={x:x*dd.w+x*dd.gap , y:y*dd.h+y*dd.gap , w:dd.w , h:dd.h};
+                                        target.x+=xoffset;
+                                        target.y+=yoffset;
+                                        _.target.push(target);
+                                    } 
+                            }
                     }
 
                 this.update = function(cc)
