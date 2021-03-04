@@ -69,8 +69,9 @@ let game = function()
         this.scl=0.1;
         this.cannon_img = document.getElementById("cannon");
         this.target_img = document.getElementById("target");
-        this.cd={w:384*_.scl , h:512*_.scl}; // cd = cannon data
-        this.td={}; //td =target data
+        this.cd={w:380*_.scl , h:400*_.scl}; // cd = cannon data
+        this.td={w:400*_.scl , h:400*_.scl , rows: 3 , cols: 8 ,gap : 10}; //td =target data
+        this.cannon={x:cw/2 };
     }
 
 
