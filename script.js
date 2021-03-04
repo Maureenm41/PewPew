@@ -1,26 +1,23 @@
-const grid = document.querySelector('.grid')
+const cannon = document.getElementById('cannon')
+const target = document.getElementById('target')
+const ball = document.getElementById('ball')
 
-for (let i = 0 ; i < 225; i++)
+let leftkey=rightkey=false;
+let cc,game;
+
+function init()
 {
-    const square = document.createElement('div')
-    grid.appendChild(square)
+    window.addEventListener("keydown", onKeydown);
+    window.addEventListener("keyup", onKeyup);
+    cc=cannon.getContext("2d");
 }
 
-const squares = Array.from(document.querySelectorAll('.grid div'))
-
-const target =
-[
-    0,1,2,3,4,5,6,7,8,9,
-    10,11,12,13,14,15,16,17,18,19
-]
-
-
-function draw()
+function update()
 {
-    for (let i = 0 ; target.length; i++) 
-    {
-        squares=[target[i]].classList.add('target')
-    }
+    clearCanvas(cc);
 }
 
-draw
+function onKeydown(e)
+{
+    let keycode=e.keycode;
+}

@@ -1,6 +1,17 @@
 body
 {
-    background-color: rgb(30, 36, 92);
+    background-color: rgb(50, 57, 122);
+    background-image: url("assets/pexels-pixabay-37859.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header
+{
+    background-color: rgba(0, 0, 0, 0.199);
+    text-align: center;
+    top: 0 ;
+    position: sticky;
 }
 
 .grid
