@@ -104,13 +104,34 @@ let game = function()
             {
                 this.draw = function(cc)
                     {
-
+                        let dd = _.i
                     }
 
                 this.update = function(cc)
                     {
 
                     }
+
+                this.updateCannonMove = function()
+                    {
+
+                    }
+                this.cannonShootBall= function()
+                    {
+
+                    }
+                this.updateMissiles = function(cc)
+                    {
+
+                    }
+                this.updateTargetBehavior = function()
+                    {
+
+                    }
+                this.checkGameComplete = function()
+                {
+
+                }
             }
     }
 
