@@ -102,9 +102,7 @@ let game = function()
 
         this.init = function()
             {
-                this.draw = function(cc)
-                    {
-                        let dd = _.id;
+                 let dd = _.id;
                         _.targetRange.w=dd.cols*dd.w+dd.cols*dd.gap;
                         _.targetRange.x=cw/2-_.targetRange.w/2;
                         let yoffset=10;
@@ -119,35 +117,39 @@ let game = function()
                                         _.target.push(target);
                                     } 
                             }
-                    }
-
-                this.update = function(cc)
-                    {
-
-                    }
-
-                this.updateCannonMove = function()
-                    {
-
-                    }
-                this.cannonShootBall= function()
-                    {
-
-                    }
-                this.updateMissiles = function(cc)
-                    {
-
-                    }
-                this.updateTargetBehavior = function()
-                    {
-
-                    }
-                this.checkGameComplete = function()
-                {
-
-                }
             }
-    }
+
+        this.draw = function(cc)
+                    {
+
+                    }
+        this.update = function(cc)
+                    {
+
+                    }
+
+        this.updateCannonMove = function()
+                    {
+
+                    }
+        this.cannonShootBall= function()
+                    {
+
+                    }
+        this.updateMissiles = function(cc)
+                    {
+
+                    }
+        this.updateTargetBehavior = function()
+            {
+
+            }
+        this.checkGameComplete = function()
+            {
+
+            }
+        }
+    
 
 
     
