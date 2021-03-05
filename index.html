@@ -27,6 +27,16 @@
 
     
 
-    <script src="script.js"></script>
+    <script src="script.js">
+
+        window.onload = function()
+            {
+                let cannon = document.getElementById('cannon');
+                let ball = document.getElementById('ball');
+                let target = document.getElementById('target');
+        
+                context.drawImage(cannon , 10 , 30);
+            }
+    </script>
 </body>
 </html>

@@ -13,24 +13,10 @@ header
     top: 0 ;
     position: sticky;
 }
-
-.grid
+canvas
 {
-    width: 80vh;
-    height: 80vh;
-    border: solid;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.grid div
-{
-    width: 20px;
-    height: 20px;
-}
-
-.target
-{
-    background-color: rgb(109, 79, 79);
-    border-radius: 10px;
+    background-image: url("assets/bg-ocean.jpg");
+    opacity: 0.8;
+    margin-left: 50vh;
+    position: relative;
 }
