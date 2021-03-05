@@ -1,7 +1,7 @@
 //part 1
-//const clearColor="#121212";
-//const cannonBallColor="#000";
-//const targetMissileColor="#fff";
+const clearColor="#121212";
+const cannonBallColor="#000";
+const targetMissileColor="#fff";
 const can = document.getElementById('can')
 const target = document.getElementById('target')
 const ball = document.getElementById('ball')
@@ -14,6 +14,8 @@ function init()
     window.addEventListener("keydown", onKeydown);
     window.addEventListener("keyup", onKeyup);
     cc=cannon.getContext("2d");
+    game = new Game();
+    game.init();
 }
 
 function update()
@@ -156,9 +158,9 @@ let game = function()
                                 _.cannon.x=_.targetRange.x;
 
                             }
-                        if()
+                        if(_.cannon.x+_.cannon.w>_.targetRange.x+_.targetRange.w)
                         {
-                            ;
+                            _.cannon.x=_.targetRange.x+_.targetRange.w-_.cannon.w;
                         }
 
                     }
