@@ -119,17 +119,47 @@ let game = function()
                             }
             }
 
-        this.draw = function(cc)
+        this.draw = function(cc) //drawing the img
                     {
+                        for(let i=0 ;i<_.target.length;i++)
+                            {
+                                let tar = _.target[i];
+                                drawImg(cc,_.target_img,tar.x,tar.y,tar.w,tar.h);
+
+                            }
+                        drawImg(cc,_.cannon_img,_.cannon.x,_.cannon.y,_.cannon.w,_.cannon.h);
 
                     }
         this.update = function(cc)
                     {
+                        if(_.completed)return ;
+                        _.updateCannonMove();
+                        _.draw(cc);
+                        _.updateMissiles(cc);
+                        _.updateTargetBehavior();
+                        _.checkGameComplete;
 
                     }
 
-        this.updateCannonMove = function()
+        this.updateCannonMove = function() //move of the ship
                     {
+                        if(leftkey)
+                            {
+                                _.cannon.x-=_.cannonSpeed;
+                            }
+                        if(rightkey)
+                            {
+                                _.cannon.x+=_.cannonSpeed;
+                            }
+                        if(_.cannon.x<_.targetRange.x)
+                            {
+                                _.cannon.x=_.targetRange.x;
+
+                            }
+                        if()
+                        {
+                            ;
+                        }
 
                     }
         this.cannonShootBall= function()
