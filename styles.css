@@ -15,7 +15,7 @@ header
 }
 canvas
 {
-    background-image: url("assets/bg-ocean.jpg");
+    background-color: rgb(0, 0, 0) ;
     opacity: 0.8;
     margin-left: 50vh;
     position: relative;

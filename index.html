@@ -37,6 +37,30 @@
         
                 context.drawImage(cannon , 10 , 30);
             }
+
+            // Creates an instance of the Game class.
+function Game() {
+ 
+ // Set the initial config.
+ this.config = {
+    gameWidth: 400,
+    gameHeight: 300,
+    fps: 50
+};
+ 
+// All state is in the variables below.
+this.lives = 3;
+this.width = 0;
+this.height = 0;
+this.gameBound = {left: 0, top: 0, right: 0, bottom: 0};
+ 
+//  The state stack.
+this.stateStack = [];
+ 
+//  Input/output
+this.pressedKeys = {};
+this.gameCanvas =  null;
+}
     </script>
 </body>
 </html>
